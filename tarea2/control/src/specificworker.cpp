@@ -50,11 +50,6 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 //	}
 //	catch(const std::exception &e) { qFatal("Error reading config params"); }
 
-
-
-
-
-
 	return true;
 }
 
@@ -75,20 +70,27 @@ void SpecificWorker::initialize(int period)
 
 void SpecificWorker::compute()
 {
-	//computeCODE
-	//QMutexLocker locker(mutex);
-	//try
-	//{
-	//  camera_proxy->getYImage(0,img, cState, bState);
-	//  memcpy(image_gray.data, &img[0], m_width*m_height*sizeof(uchar));
-	//  searchTags(image_gray);
-	//}
-	//catch(const Ice::Exception &e)
-	//{
-	//  std::cout << "Error reading from Camera" << e << std::endl;
-	//}
-	
-	
+    try
+    {
+        auto ldata = laser_proxy->getLaserData();
+        // hacer una copia con el tercio central de ladata
+        // ordenar por dist
+        // comprobar si el primero es menor que un umbral
+        // if true, parar, y poner a girar el robot
+        // if false, dejar de girar, avanzar
+        
+    }
+    catch(const Ice::Exception &e) { std::cout << e.what() << std::endl;}
+
+    try
+    {
+        float adv =200;
+        float rot = 0.5;
+        differentialrobot_proxy->setSpeedBase(adv, rot);
+    }
+    catch(const Ice::Exception &e) { std::cout << e.what() << std::endl;}
+
+
 }
 
 int SpecificWorker::startup_check()
