@@ -70,23 +70,30 @@ void SpecificWorker::initialize(int period)
 
 void SpecificWorker::compute()
 {
-    try
-    {
-        auto ldata = laser_proxy->getLaserData();
-        // hacer una copia con el tercio central de ladata
-        // ordenar por dist
-        // comprobar si el primero es menor que un umbral
-        // if true, parar, y poner a girar el robot
-        // if false, dejar de girar, avanzar
-        
+    try {
+
+        const auto ldata = lasermulti_proxy->getLaserData(0);
+        const int part = 3;
+
+        RoboCompLaserMulti::TLaserData copy;
+        copy.assign(ldata.begin()+ldata.size()/part, ldata.end()-ldata.size()/part);
+        std::ranges::sort(copy, {}, &RoboCompLaserMulti::TData::dist);
+        qInfo() << copy.front().dist;
+
+
+        if(copy.front().dist < 500){
+            differentialrobotmulti_proxy->setSpeedBase(0, 0, 0.5);
+        } else {
+            differentialrobotmulti_proxy->setSpeedBase(0, 200, 0);
+        }
     }
     catch(const Ice::Exception &e) { std::cout << e.what() << std::endl;}
 
     try
     {
-        float adv =200;
+        float adv = 200;
         float rot = 0.5;
-        differentialrobot_proxy->setSpeedBase(adv, rot);
+        differentialrobotmulti_proxy->setSpeedBase(0, adv, rot);
     }
     catch(const Ice::Exception &e) { std::cout << e.what() << std::endl;}
 
