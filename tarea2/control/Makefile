@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robocomp/robocomp/components/Rob-tica-G8/tarea2/control
+CMAKE_SOURCE_DIR = /home/alumno/robocomp/components/Rob-tica-G8/tarea2/control
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/alumno/robocomp/components/Rob-tica-G8/tarea2/control
@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ICES__home_robocomp_robocomp_components_Rob-tica-G8_tarea2_control_src
+# Target rules for targets named ICES__home_alumno_robocomp_components_Rob-tica-G8_tarea2_control_src
 
 # Build rule for target.
-ICES__home_robocomp_robocomp_components_Rob-tica-G8_tarea2_control_src: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICES__home_robocomp_robocomp_components_Rob-tica-G8_tarea2_control_src
-.PHONY : ICES__home_robocomp_robocomp_components_Rob-tica-G8_tarea2_control_src
+ICES__home_alumno_robocomp_components_Rob-tica-G8_tarea2_control_src: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICES__home_alumno_robocomp_components_Rob-tica-G8_tarea2_control_src
+.PHONY : ICES__home_alumno_robocomp_components_Rob-tica-G8_tarea2_control_src
 
 # fast build rule for target.
-ICES__home_robocomp_robocomp_components_Rob-tica-G8_tarea2_control_src/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ICES__home_robocomp_robocomp_components_Rob-tica-G8_tarea2_control_src.dir/build.make src/CMakeFiles/ICES__home_robocomp_robocomp_components_Rob-tica-G8_tarea2_control_src.dir/build
-.PHONY : ICES__home_robocomp_robocomp_components_Rob-tica-G8_tarea2_control_src/fast
+ICES__home_alumno_robocomp_components_Rob-tica-G8_tarea2_control_src/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ICES__home_alumno_robocomp_components_Rob-tica-G8_tarea2_control_src.dir/build.make src/CMakeFiles/ICES__home_alumno_robocomp_components_Rob-tica-G8_tarea2_control_src.dir/build
+.PHONY : ICES__home_alumno_robocomp_components_Rob-tica-G8_tarea2_control_src/fast
 
 #=============================================================================
 # Target rules for targets named control
@@ -212,7 +212,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... ICES__home_robocomp_robocomp_components_Rob-tica-G8_tarea2_control_src"
+	@echo "... ICES__home_alumno_robocomp_components_Rob-tica-G8_tarea2_control_src"
 	@echo "... control_autogen"
 	@echo "... control"
 .PHONY : help

@@ -1,8 +1,8 @@
 CommonBehavior.Endpoints=tcp -p 10000
 
 # Proxies for required interfaces
-DifferentialRobotMultiProxy = differentialrobotmulti:tcp -h 158.49.227.90 -p 10007
-LaserMultiProxy = lasermulti:tcp -h 158.49.227.90 -p 10008
+DifferentialRobotMultiProxy = differentialrobotmulti:tcp -h 158.49.227.58 -p 10007
+LaserMultiProxy = lasermulti:tcp -h 158.49.227.58 -p 10008
 
 
 

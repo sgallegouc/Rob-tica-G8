@@ -70,30 +70,35 @@ void SpecificWorker::initialize(int period)
 
 void SpecificWorker::compute()
 {
-    try {
 
-        const auto ldata = lasermulti_proxy->getLaserData(0);
+    RoboCompLaserMulti::TLaserData ldata;
+    try
+
+    { ldata = lasermulti_proxy->getLaserData(0);}
+    catch(const Ice::Exception &e) {
+        std::cout << e.what() << " " << "laser failed" << std::endl;
+        return;
+    }
+
         const int part = 3;
-
         RoboCompLaserMulti::TLaserData copy;
         copy.assign(ldata.begin()+ldata.size()/part, ldata.end()-ldata.size()/part);
         std::ranges::sort(copy, {}, &RoboCompLaserMulti::TData::dist);
         qInfo() << copy.front().dist;
 
 
-        if(copy.front().dist < 500){
-            differentialrobotmulti_proxy->setSpeedBase(0, 0, 0.5);
-        } else {
-            differentialrobotmulti_proxy->setSpeedBase(0, 200, 0);
-        }
-    }
-    catch(const Ice::Exception &e) { std::cout << e.what() << std::endl;}
+
 
     try
     {
-        float adv = 200;
-        float rot = 0.5;
+        float adv = 700;
+        float rot = 0;
         differentialrobotmulti_proxy->setSpeedBase(0, adv, rot);
+        if(copy.front().dist < 700){
+            differentialrobotmulti_proxy->setSpeedBase(0, 0, 0.8);
+        } else {
+            differentialrobotmulti_proxy->setSpeedBase(0, 700, 0);
+        }
     }
     catch(const Ice::Exception &e) { std::cout << e.what() << std::endl;}
 
