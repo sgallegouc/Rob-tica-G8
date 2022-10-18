@@ -70,41 +70,54 @@ void SpecificWorker::initialize(int period)
 
 void SpecificWorker::compute()
 {
-
     RoboCompLaserMulti::TLaserData ldata;
     try
-
     { ldata = lasermulti_proxy->getLaserData(0);}
     catch(const Ice::Exception &e) {
         std::cout << e.what() << " " << "laser failed" << std::endl;
         return;
     }
+    std::tuple<float, float> vels{0.f,0.f};
 
-        const int part = 3;
-        RoboCompLaserMulti::TLaserData copy;
-        copy.assign(ldata.begin()+ldata.size()/part, ldata.end()-ldata.size()/part);
-        std::ranges::sort(copy, {}, &RoboCompLaserMulti::TData::dist);
-        qInfo() << copy.front().dist;
-
-
-
+    swtich(state)
+    {
+        case State::IDLE:
+            state = State::FORWARD;
+            break;
+        case State:FORWARD:   // avanzar recto
+            vels = forward_move(ldata);
+            break;
+        case State::FOLLOW_WALL:
+            follow_wal(ldata);
+            break;
+        case 3:
+            // rotar
+            adv=0, rot=0.8;
+            differentialrobotmulti_proxy->setSpeedBase(0, adv, rot);
+            break;
+    }
 
     try
     {
-        float adv = 700;
-        float rot = 0;
-        differentialrobotmulti_proxy->setSpeedBase(0, adv, rot);
-        if(copy.front().dist < 700){
-            differentialrobotmulti_proxy->setSpeedBase(0, 0, 0.8);
-        } else {
-            differentialrobotmulti_proxy->setSpeedBase(0, 700, 0);
-        }
+            differentialrobotmulti_proxy->setSpeed(0, adv, rot);
     }
-    catch(const Ice::Exception &e) { std::cout << e.what() << std::endl;}
-
-
+    catch(const Ice::Exception &e) { std::cout << e.what() << " " << "laser failed" << std::endl;}
 }
 
+///////////////////////////7// PARTE DE LOS SECTORES
+std::tuple<float, float> SpecificWorker::forward_move(const RoboCompLaserMulti::TLaserData &ldata)
+{
+    // exit conditions
+    // sobre ldata extraes franja central
+    // si es menor queumbral,
+        // state = State::TURN;
+        // return std::make_tuple(0,0);
+    // si campo laser es mayor que 80% del campo laser nominal, entonces state == State::SPIRAL
+
+    // behaviour
+    return std::make_tuple(700, 0);
+}
+///////////////////////////////
 int SpecificWorker::startup_check()
 {
 	std::cout << "Startup check" << std::endl;

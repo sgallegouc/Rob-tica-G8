@@ -38,16 +38,17 @@ public:
 	~SpecificWorker();
 	bool setParams(RoboCompCommonBehavior::ParameterList params);
 
+    public slots:
+	    void compute();
+	    int startup_check();
+	    void initialize(int period);
 
+    private:
+	    float umbral = 700;
+	    bool startup_check_flag;
 
-public slots:
-	void compute();
-	int startup_check();
-	void initialize(int period);
-private:
-	std::shared_ptr < InnerModel > innerModel;
-	bool startup_check_flag;
-
+        class enum State : {IDLE, TURN, FORWARD, SPIRAL, FOLLOW_WALL};
+        State state = State::IDLE;
 };
 
 #endif
