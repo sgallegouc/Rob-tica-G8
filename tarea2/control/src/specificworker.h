@@ -47,8 +47,22 @@ public:
 	    float umbral = 700;
 	    bool startup_check_flag;
 
-        class enum State : {IDLE, TURN, FORWARD, SPIRAL, FOLLOW_WALL};
+        enum class State {IDLE, TURN, FORWARD, SPIRAL, FOLLOW_WALL};
         State state = State::IDLE;
+
+        struct Constants {
+            const int partesLaser = 3;
+        };
+
+        Constants consts;
+
+    tuple<float, float> forward_move(const RoboCompLaserMulti::TLaserData &ldata);
+
+    tuple<float, float> follow_wall(const RoboCompLaserMulti::TLaserData &ldata);
+
+    tuple<float, float> rotation_move(const RoboCompLaserMulti::TLaserData &ldata);
+
+    tuple<float, float> spiral_move(const RoboCompLaserMulti::TLaserData &ldata);
 };
 
 #endif

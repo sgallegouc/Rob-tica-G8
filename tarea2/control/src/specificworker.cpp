@@ -77,29 +77,30 @@ void SpecificWorker::compute()
         std::cout << e.what() << " " << "laser failed" << std::endl;
         return;
     }
-    std::tuple<float, float> vels{0.f,0.f};
+    std::tuple<float, float> vels{0.f,0.f};   // vel[0] = adv && vel[1] = rot
 
-    swtich(state)
+    switch(state)
     {
         case State::IDLE:
             state = State::FORWARD;
             break;
-        case State:FORWARD:   // avanzar recto
+        case State::FORWARD:   // avanzar recto
             vels = forward_move(ldata);
             break;
         case State::FOLLOW_WALL:
-            follow_wal(ldata);
+            vels = follow_wall(ldata);
             break;
-        case 3:
-            // rotar
-            adv=0, rot=0.8;
-            differentialrobotmulti_proxy->setSpeedBase(0, adv, rot);
+        case State::TURN:
+            vels = rotation_move(ldata);
+            break;
+        case State::SPIRAL:
+            vels = spiral_move(ldata);
             break;
     }
 
     try
     {
-            differentialrobotmulti_proxy->setSpeed(0, adv, rot);
+            differentialrobotmulti_proxy->setSpeedBase(0, get<0>(vels), get<1>(vels));
     }
     catch(const Ice::Exception &e) { std::cout << e.what() << " " << "laser failed" << std::endl;}
 }
@@ -109,14 +110,50 @@ std::tuple<float, float> SpecificWorker::forward_move(const RoboCompLaserMulti::
 {
     // exit conditions
     // sobre ldata extraes franja central
-    // si es menor queumbral,
-        // state = State::TURN;
-        // return std::make_tuple(0,0);
+    RoboCompLaserMulti::TLaserData copy(ldata.begin()+ldata.size()/3, ldata.end()-ldata.size()/3);
+    if(copy.front().dist < umbral)
+    {
+        state = State::TURN;
+        return std::make_tuple(0, 0);
+    }
     // si campo laser es mayor que 80% del campo laser nominal, entonces state == State::SPIRAL
 
-    // behaviour
+    if (auto suma = std::accumulate(ldata.begin(), ldata.end(), 0.f, [](auto s, auto a){return s+=a.dist; }); suma > (ldata.size()*4000)*0.8)
+        state = State::SPIRAL;
+
+
     return std::make_tuple(700, 0);
 }
+
+
+
+std::tuple<float, float> SpecificWorker::follow_wall(const RoboCompLaserMulti::TLaserData &ldata){
+    return std::make_tuple(700, 0);
+}
+
+std::tuple<float, float> SpecificWorker::rotation_move(const RoboCompLaserMulti::TLaserData &ldata) {
+    RoboCompLaserMulti::TLaserData copy(ldata.begin(), ldata.end());
+
+    if (copy.front().dist > umbral) {
+        state = State::FORWARD;
+        return std::make_tuple(0, 0);
+
+
+    }
+        // si campo laser es mayor que 80% del campo laser nominal, entonces state == State::SPIRAL
+    else {
+
+    return std::make_tuple(0, 0.8);
+    }
+
+    // comprobar que sea mayor que el umbral
+
+}
+
+std::tuple<float, float> SpecificWorker::spiral_move(const RoboCompLaserMulti::TLaserData &ldata){
+    return std::make_tuple(700, 0);
+}
+
 ///////////////////////////////
 int SpecificWorker::startup_check()
 {
