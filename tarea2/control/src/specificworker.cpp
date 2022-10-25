@@ -111,15 +111,22 @@ std::tuple<float, float> SpecificWorker::forward_move(const RoboCompLaserMulti::
     // exit conditions
     // sobre ldata extraes franja central
     RoboCompLaserMulti::TLaserData copy(ldata.begin()+ldata.size()/3, ldata.end()-ldata.size()/3);
+    std::ranges::sort(copy, {},&RoboCompLaserMulti::TData::dist);
     if(copy.front().dist < umbral)
     {
         state = State::TURN;
-        return std::make_tuple(0, 0);
+        return std::make_tuple(0, 1.0);
     }
+
+
+
     // si campo laser es mayor que 80% del campo laser nominal, entonces state == State::SPIRAL
 
-    if (auto suma = std::accumulate(ldata.begin(), ldata.end(), 0.f, [](auto s, auto a){return s+=a.dist; }); suma > (ldata.size()*4000)*0.8)
-        state = State::SPIRAL;
+   if (auto suma = std::accumulate(ldata.begin(), ldata.end(), 0.f, [](auto s, auto a){return s+=a.dist; }); suma > (ldata.size()*4000)*0.8){
+       state = State::SPIRAL;
+       return std::make_tuple(5, 1.2);
+   }
+
 
 
     return std::make_tuple(700, 0);
@@ -132,25 +139,43 @@ std::tuple<float, float> SpecificWorker::follow_wall(const RoboCompLaserMulti::T
 }
 
 std::tuple<float, float> SpecificWorker::rotation_move(const RoboCompLaserMulti::TLaserData &ldata) {
-    RoboCompLaserMulti::TLaserData copy(ldata.begin(), ldata.end());
+    RoboCompLaserMulti::TLaserData copy(ldata.begin()+ldata.size()/3, ldata.end()-ldata.size()/3);
+    std::ranges::sort(copy, {},&RoboCompLaserMulti::TData::dist);
 
     if (copy.front().dist > umbral) {
         state = State::FORWARD;
-        return std::make_tuple(0, 0);
-
-
+        return std::make_tuple(700, 0);
     }
+
         // si campo laser es mayor que 80% del campo laser nominal, entonces state == State::SPIRAL
-    else {
+    return std::make_tuple(0, 1.0);
 
-    return std::make_tuple(0, 0.8);
-    }
 
     // comprobar que sea mayor que el umbral
 
 }
 
 std::tuple<float, float> SpecificWorker::spiral_move(const RoboCompLaserMulti::TLaserData &ldata){
+
+    RoboCompLaserMulti::TLaserData copy(ldata.begin()+ldata.size()/3, ldata.end()-ldata.size()/3);
+    std::ranges::sort(copy, {},&RoboCompLaserMulti::TData::dist);
+
+    float spiral_ADV=5.0, spiral_ROT=1.2;
+    std::make_tuple(spiral_ADV,spiral_ROT);
+    if (copy.front().dist < umbral) {
+        state = State::TURN;
+        return std::make_tuple(0, 0.8);
+    }
+    if(1000<spiral_ADV){
+        spiral_ADV = spiral_ADV+50;
+        spiral_ROT = spiral_ROT-0.02;
+    }else{
+        state = State::FORWARD;
+
+        return std::make_tuple(700, 0);
+    }
+
+
     return std::make_tuple(700, 0);
 }
 
