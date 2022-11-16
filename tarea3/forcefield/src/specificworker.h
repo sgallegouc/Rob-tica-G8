@@ -93,6 +93,7 @@ class SpecificWorker : public GenericWorker
         const float forces_similarity_threshold = 200;
         double xset_gaussian = 0.4;             // gaussian break x set value
         double yset_gaussian = 0.3;             // gaussian break y set value
+        int umbral = 200;
     };
     Constants consts;
     float current_servo_angle = 0.f;

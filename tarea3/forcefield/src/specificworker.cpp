@@ -231,28 +231,26 @@ void SpecificWorker::compute()
     // TODO:: STATE MACHINE
     // state machine to activate basic behaviours. Returns a  target_coordinates vector
     //  state_machine(objects, current_line);
+
+
+
     switch(state){
-        case : SEARCHING
-            search_state(objects);
-        case : FORWARD
-            forward_state(objects);
-    }
-
-
-    void SpecificWorker::search_state(RoboCompYoloObjects::TObjects objects){
-
-
-    }
-
-    void SpecificWorker::forward_state(RoboCompYoloObjects::TObjects objects){
-
-
+        case State::IDLE:
+            state= State::SEARCHING;
+            break;
+        case State::SEARCHING:
+            SEARCHING_state(objects);
+            break;
+        case State::APPROACHING:
+            APPROACHING_state(objects);
+            break;
+        case State::WAITING:
+            WAITING_state();
+            break;
     }
 
     /// metodo buscar: girar hasta que la lista de objetos de yolo devuelva un current_state distinto al que
     /// viene inicializado .type = -1.
-
-
 
     /// eye tracking: tracks  current selected object or  IOR if none
     eye_track(robot);
@@ -266,6 +264,43 @@ void SpecificWorker::compute()
     //    catch(const Ice::Exception &e){ std::cout << e.what() << "Error connecting to omnirobot" << std::endl;}
 
     //robot.print();
+}
+
+void SpecificWorker::SEARCHING_state(RoboCompYoloObjects::TObjects objects){
+    /// metodo buscar: girar hasta que la lista de objetos de yolo devuelva un current_state distinto al que
+    /// viene inicializado .type = -1.
+
+    /// si el current_target
+    if(objects.empty()) return;
+    if(robot.get_current_target().type == -1)
+    {
+        robot.set_current_target(objects.front());
+        robot.set_pure_rotation(0);
+        state = State::APPROACHING;
+    }
+
+    else if (auto it = std::find_if_not(objects.begin(), objects.end(),
+                                       [](auto a) { return robot.get_current_target().type == a.type }); it != objects.end()) /// primer elemento distinto al tipo del robot
+    {
+        robot.set_pure_rotation(0);
+        robot.set_current_target(*it);
+        state = State::APPROACHING;
+    }
+    else
+        robot.set_pure_rotation(0.5);
+}
+
+void SpecificWorker::APPROACHING_state(RoboCompYoloObjects::TObjects objects){
+    robot.set_current_speed(500, 0);
+    if(umbral < objects.front().x()){
+        robot.set_current_speed(0, 0);
+        state = State::WAITING;
+    }
+}
+
+
+void SpecificWorker::WAITING_state(){
+    state = State::SEARCHING;
 }
 
 //////////////////// ELEMENTS OF CONTROL/////////////////////////////////////////////////
