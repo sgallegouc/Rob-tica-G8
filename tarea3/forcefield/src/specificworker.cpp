@@ -228,15 +228,15 @@ void SpecificWorker::compute()
     /// draw yolo_objects on 2D view
     draw_objects_on_2dview(objects, RoboCompYoloObjects::TBox());
 
-    // TODO:: STATE MACHINE
-    // state machine to activate basic behaviours. Returns a  target_coordinates vector
-    //  state_machine(objects, current_line);
+   //  TODO:: STATE MACHINE
+   //  state machine to activate basic behaviours. Returns a  target_coordinates vector
+   //  state_machine(objects, current_line);
 
 
 
     switch(state){
         case State::IDLE:
-            state= State::SEARCHING;
+            state = State::SEARCHING;
             break;
         case State::SEARCHING:
             SEARCHING_state(objects);
@@ -244,10 +244,14 @@ void SpecificWorker::compute()
         case State::APPROACHING:
             APPROACHING_state(objects);
             break;
-        case State::WAITING:
+
+            /*
+            case State::WAITING:
             WAITING_state();
             break;
-    }
+    */
+
+             }
 
     /// metodo buscar: girar hasta que la lista de objetos de yolo devuelva un current_state distinto al que
     /// viene inicializado .type = -1.
@@ -259,18 +263,15 @@ void SpecificWorker::compute()
     // DWA algorithm
     auto [adv, rot, side] =  dwa.update(robot.get_robot_target_coordinates(), current_line, robot.get_current_advance_speed(), robot.get_current_rot_speed(), viewer);
 
-    //qInfo() << __FUNCTION__ << adv <<  side << rot;º
-    //    try{ omnirobot_proxy->setSpeedBase(side, adv, rot); }
-    //    catch(const Ice::Exception &e){ std::cout << e.what() << "Error connecting to omnirobot" << std::endl;}
+    qInfo() << __FUNCTION__ << adv <<  side << rot;
+        try{ omnirobot_proxy->setSpeedBase(side, adv, rot); }
+        catch(const Ice::Exception &e){ std::cout << e.what() << "Error connecting to omnirobot" << std::endl;}
 
     //robot.print();
 }
 
-void SpecificWorker::SEARCHING_state(RoboCompYoloObjects::TObjects objects){
-    /// metodo buscar: girar hasta que la lista de objetos de yolo devuelva un current_state distinto al que
-    /// viene inicializado .type = -1.
+void SpecificWorker::SEARCHING_state(const RoboCompYoloObjects::TObjects &objects){
 
-    /// si el current_target
     if(objects.empty()) return;
     if(robot.get_current_target().type == -1)
     {
@@ -280,7 +281,7 @@ void SpecificWorker::SEARCHING_state(RoboCompYoloObjects::TObjects objects){
     }
 
     else if (auto it = std::find_if_not(objects.begin(), objects.end(),
-                                       [](auto a) { return robot.get_current_target().type == a.type }); it != objects.end()) /// primer elemento distinto al tipo del robot
+                                       [r=robot](auto a) { return r.get_current_target().type == a.type; }); it != objects.end()) /// primer elemento distinto al tipo del robot
     {
         robot.set_pure_rotation(0);
         robot.set_current_target(*it);
@@ -290,18 +291,33 @@ void SpecificWorker::SEARCHING_state(RoboCompYoloObjects::TObjects objects){
         robot.set_pure_rotation(0.5);
 }
 
-void SpecificWorker::APPROACHING_state(RoboCompYoloObjects::TObjects objects){
-    robot.set_current_speed(500, 0);
-    if(umbral < objects.front().x()){
-        robot.set_current_speed(0, 0);
-        state = State::WAITING;
+
+void SpecificWorker::APPROACHING_state(const RoboCompYoloObjects::TObjects &objects){
+
+    if(robot.get_distance_to_target() < umbral){
+        state = State::SEARCHING;
     }
+    // el find con el igual, si me da true reemplazo el target con el target que me ha dado el iterador.
+    else if (auto it = std::find_if(objects.begin(), objects.end(),
+                                    [r=robot](auto a) { return r.get_current_target().type == a.type; }); it != objects.end())
+    {
+        robot.set_pure_advance(300);
+        robot.set_current_target(*it);
+    }
+    else
+        state = State::SEARCHING;
+
 }
+
+
+
+
 
 
 void SpecificWorker::WAITING_state(){
     state = State::SEARCHING;
 }
+
 
 //////////////////// ELEMENTS OF CONTROL/////////////////////////////////////////////////
 // perception

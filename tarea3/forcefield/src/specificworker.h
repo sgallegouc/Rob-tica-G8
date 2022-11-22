@@ -54,6 +54,7 @@ class SpecificWorker : public GenericWorker
         void compute();
         int startup_check();
         void initialize(int period);
+        int umbral = 200;
 
     private:
 
@@ -93,7 +94,6 @@ class SpecificWorker : public GenericWorker
         const float forces_similarity_threshold = 200;
         double xset_gaussian = 0.4;             // gaussian break x set value
         double yset_gaussian = 0.3;             // gaussian break y set value
-        int umbral = 200;
     };
     Constants consts;
     float current_servo_angle = 0.f;
@@ -126,10 +126,10 @@ class SpecificWorker : public GenericWorker
     // state machine
     Eigen::Vector3f state_machine(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
     enum class State {IDLE, SEARCHING, APPROACHING, WAITING};
-    State state = State::SEARCHING;
-    Eigen::Vector3f search_state(const RoboCompYoloObjects::TObjects &objects);
-    Eigen::Vector3f approach_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
-    Eigen::Vector3f wait_state();
+    State state = State::IDLE;
+    void SEARCHING_state(const RoboCompYoloObjects::TObjects &objects);
+    void APPROACHING_state(const RoboCompYoloObjects::TObjects &objects);
+    void WAITING_state();
 
     float iou(const RoboCompYoloObjects::TBox &a, const RoboCompYoloObjects::TBox &b);
     float closest_distance_ahead(const vector<Eigen::Vector2f> &line);
