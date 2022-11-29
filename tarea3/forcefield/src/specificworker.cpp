@@ -29,7 +29,7 @@
 */
 SpecificWorker::SpecificWorker(TuplePrx tprx, bool startup_check) : GenericWorker(tprx)
 {
-	this->startup_check_flag = startup_check;
+    this->startup_check_flag = startup_check;
 }
 /**
 * \brief Default destructor
@@ -37,7 +37,7 @@ SpecificWorker::SpecificWorker(TuplePrx tprx, bool startup_check) : GenericWorke
 SpecificWorker::~SpecificWorker()
 {
     jointmotorsimple_proxy->setVelocity("camera_pan_joint", RoboCompJointMotorSimple::MotorGoalVelocity{0.f, 1.f});
-	std::cout << "Destroying SpecificWorker" << std::endl;
+    std::cout << "Destroying SpecificWorker" << std::endl;
 }
 bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 {
@@ -51,18 +51,18 @@ bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 //	}
 //	catch(const std::exception &e) { qFatal("Error reading config params"); }
 
-	return true;
+    return true;
 }
 void SpecificWorker::initialize(int period)
 {
-	std::cout << "Initializing worker" << std::endl;
-	this->Period = period;
-	if(this->startup_check_flag)
-	{
-		this->startup_check();
-	}
-	else
-	{
+    std::cout << "Initializing worker" << std::endl;
+    this->Period = period;
+    if(this->startup_check_flag)
+    {
+        this->startup_check();
+    }
+    else
+    {
         // graphics
         viewer = new AbstractGraphicViewer(this->beta_frame,  QRectF(-2500, -2500, 5000, 5000));
         this->resize(900,650);
@@ -191,7 +191,7 @@ void SpecificWorker::initialize(int period)
         Period = 50;
         timer.start(Period);
         std::cout << "Worker initialized OK" << std::endl;
-	}
+    }
 }
 void SpecificWorker::compute()
 {
@@ -228,9 +228,9 @@ void SpecificWorker::compute()
     /// draw yolo_objects on 2D view
     draw_objects_on_2dview(objects, RoboCompYoloObjects::TBox());
 
-   //  TODO:: STATE MACHINE
-   //  state machine to activate basic behaviours. Returns a  target_coordinates vector
-   //  state_machine(objects, current_line);
+    //  TODO:: STATE MACHINE
+    //  state machine to activate basic behaviours. Returns a  target_coordinates vector
+    //  state_machine(objects, current_line);
 
 
 
@@ -251,7 +251,7 @@ void SpecificWorker::compute()
             break;
     */
 
-             }
+    }
 
     /// metodo buscar: girar hasta que la lista de objetos de yolo devuelva un current_state distinto al que
     /// viene inicializado .type = -1.
@@ -264,8 +264,8 @@ void SpecificWorker::compute()
     auto [adv, rot, side] =  dwa.update(robot.get_robot_target_coordinates(), current_line, robot.get_current_advance_speed(), robot.get_current_rot_speed(), viewer);
 
     qInfo() << __FUNCTION__ << adv <<  side << rot;
-        try{ omnirobot_proxy->setSpeedBase(side, adv, rot); }
-        catch(const Ice::Exception &e){ std::cout << e.what() << "Error connecting to omnirobot" << std::endl;}
+    try{ omnirobot_proxy->setSpeedBase(side, adv, rot); }
+    catch(const Ice::Exception &e){ std::cout << e.what() << "Error connecting to omnirobot" << std::endl;}
 
     //robot.print();
 }
@@ -276,32 +276,32 @@ void SpecificWorker::SEARCHING_state(const RoboCompYoloObjects::TObjects &object
     if(robot.get_current_target().type == -1)
     {
         robot.set_current_target(objects.front());
-        robot.set_pure_rotation(0);
+        robot.set_current_rot_speed(0);
         state = State::APPROACHING;
     }
 
     else if (auto it = std::find_if_not(objects.begin(), objects.end(),
-                                       [r=robot](auto a) { return r.get_current_target().type == a.type; }); it != objects.end()) /// primer elemento distinto al tipo del robot
+                                        [r=robot](auto a) { return r.get_current_target().type == a.type; }); it != objects.end()) /// primer elemento distinto al tipo del robot
     {
-        robot.set_pure_rotation(0);
+        robot.set_current_rot_speed(0);
         robot.set_current_target(*it);
         state = State::APPROACHING;
     }
     else
-        robot.set_pure_rotation(0.5);
+        robot.set_current_rot_speed(0.5);
 }
 
 
 void SpecificWorker::APPROACHING_state(const RoboCompYoloObjects::TObjects &objects){
 
-    if(robot.get_distance_to_target() < umbral){
+    if(robot.get_distance_to_target() < 300){
         state = State::SEARCHING;
     }
-    // el find con el igual, si me da true reemplazo el target con el target que me ha dado el iterador.
+        // el find con el igual, si me da true reemplazo el target con el target que me ha dado el iterador.
     else if (auto it = std::find_if(objects.begin(), objects.end(),
                                     [r=robot](auto a) { return r.get_current_target().type == a.type; }); it != objects.end())
     {
-        robot.set_pure_advance(300);
+        robot.set_current_advance_speed(300);
         robot.set_current_target(*it);
     }
     else
@@ -448,23 +448,23 @@ std::vector<std::vector<Eigen::Vector2f>> SpecificWorker::get_multi_level_3d_poi
 
     // filter initialized points not filled with real measures, with the value of its closest valid neighboor
     auto nearest_initialized_neighboor = [c=consts](const std::vector<Eigen::Vector2f> &line, std::vector<Eigen::Vector2f>::const_iterator it)
+    {
+        // go from index alternating left and right until condition is met
+        auto it_l = it+1; auto it_r = it-1;
+        bool end_r = false;
+        bool end_l = false;
+        while(not end_r and not end_l)
+            if(it_r->x() != c.max_camera_depth_range and it_r->y() != c.max_camera_depth_range)
+                return  *it_r;
+            else if (it_l->x() != c.max_camera_depth_range and it_l->y() != c.max_camera_depth_range)
+                return *it_l;
+            else
             {
-                // go from index alternating left and right until condition is met
-                auto it_l = it+1; auto it_r = it-1;
-                bool end_r = false;
-                bool end_l = false;
-                while(not end_r and not end_l)
-                    if(it_r->x() != c.max_camera_depth_range and it_r->y() != c.max_camera_depth_range)
-                        return  *it_r;
-                    else if (it_l->x() != c.max_camera_depth_range and it_l->y() != c.max_camera_depth_range)
-                            return *it_l;
-                    else
-                    {
-                        if (it_r != line.end()) it_r++; else end_r = true;
-                        if (it_l != line.begin()) it_l--; else end_l = true;
-                    }
-                return Eigen::Vector2f{0.f, 0.f};  // should not go through here
-            };
+                if (it_r != line.end()) it_r++; else end_r = true;
+                if (it_l != line.begin()) it_l--; else end_l = true;
+            }
+        return Eigen::Vector2f{0.f, 0.f};  // should not go through here
+    };
     for(auto &level : points)
         for(auto it=level.begin(); it!=level.end(); it++)
             if(it->x() == consts.max_camera_depth_range and it->y() == consts.max_camera_depth_range)
@@ -608,7 +608,7 @@ void SpecificWorker::draw_floor_line(const vector<vector<Eigen::Vector2f>> &line
 }
 void SpecificWorker::draw_forces(const Eigen::Vector2f &force, const Eigen::Vector2f &target, const Eigen::Vector2f &res)
 {
-      static std::vector<QGraphicsItem *> items;
+    static std::vector<QGraphicsItem *> items;
     for(const auto &i: items)
         viewer->scene.removeItem(i);
     items.clear();
@@ -648,14 +648,14 @@ void SpecificWorker::draw_top_camera_optic_ray()
     // compute intersection according to https://mathworld.wolfram.com/Line-PlaneIntersection.html
     Eigen::Matrix4f numerator;
     numerator << 1.f, 1.f, 1.f, 1.f,
-                 x1.x(), x2.x(), x3.x(), x4.x(),
-                 x1.y(), x2.y(), x3.y(), x4.y(),
-                 x1.z(), x2.z(), x3.z(), x4.z();
+            x1.x(), x2.x(), x3.x(), x4.x(),
+            x1.y(), x2.y(), x3.y(), x4.y(),
+            x1.z(), x2.z(), x3.z(), x4.z();
     Eigen::Matrix4f denominator;
     denominator << 1.f, 1.f, 1.f, 0.f,
-                   x1.x(), x2.x(), x3.x(), x5.x()-x4.x(),
-                   x1.y(), x2.y(), x3.y(), x5.y()-x4.y(),
-                   x1.z(), x2.z(), x3.z(), x5.z()-x4.z();
+            x1.x(), x2.x(), x3.x(), x5.x()-x4.x(),
+            x1.y(), x2.y(), x3.y(), x5.y()-x4.y(),
+            x1.z(), x2.z(), x3.z(), x5.z()-x4.z();
     float k = numerator.determinant()/denominator.determinant();
     float x = x4.x() + (x5.x()-x4.x())*k;
     float y = x4.y() + (x5.y()-x4.y())*k;

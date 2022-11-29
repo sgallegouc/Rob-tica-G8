@@ -41,22 +41,21 @@
 
 class SpecificWorker : public GenericWorker
 {
-    Q_OBJECT
+Q_OBJECT
     using v2f = Eigen::Vector2f;
-    public:
-        SpecificWorker(TuplePrx tprx, bool startup_check);
-        ~SpecificWorker();
-        bool setParams(RoboCompCommonBehavior::ParameterList params);
+public:
+    SpecificWorker(TuplePrx tprx, bool startup_check);
+    ~SpecificWorker();
+    bool setParams(RoboCompCommonBehavior::ParameterList params);
 
-        void JoystickAdapter_sendData(RoboCompJoystickAdapter::TData data);
+    void JoystickAdapter_sendData(RoboCompJoystickAdapter::TData data);
 
-    public slots:
-        void compute();
-        int startup_check();
-        void initialize(int period);
-        int umbral = 200;
+public slots:
+    void compute();
+    int startup_check();
+    void initialize(int period);
 
-    private:
+private:
 
     rc::Robot robot;
     rc::Camera top_camera;
