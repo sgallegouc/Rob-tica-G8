@@ -223,14 +223,14 @@ void SpecificWorker::compute()
     /// abrir interfaz de yol
 
     /// draw top image
-    //cv::imshow("top", top_rgb_frame); cv::waitKey(5);
+    cv::imshow("top", top_rgb_frame); cv::waitKey(5);
 
     /// draw yolo_objects on 2D view
     draw_objects_on_2dview(objects, RoboCompYoloObjects::TBox());
 
     //  TODO:: STATE MACHINE
     //  state machine to activate basic behaviours. Returns a  target_coordinates vector
-    //  state_machine(objects, current_line);
+    //state_machine(objects, current_line);
 
 
 
@@ -242,15 +242,11 @@ void SpecificWorker::compute()
             SEARCHING_state(objects);
             break;
         case State::APPROACHING:
-            APPROACHING_state(objects);
+            APPROACHING_state(objects, current_line);
             break;
-
-            /*
-            case State::WAITING:
+        case State::WAITING:
             WAITING_state();
             break;
-    */
-
     }
 
     /// metodo buscar: girar hasta que la lista de objetos de yolo devuelva un current_state distinto al que
@@ -276,32 +272,31 @@ void SpecificWorker::SEARCHING_state(const RoboCompYoloObjects::TObjects &object
     if(robot.get_current_target().type == -1)
     {
         robot.set_current_target(objects.front());
-        robot.set_current_rot_speed(0);
+        robot.set_pure_rotation(0);
         state = State::APPROACHING;
     }
 
     else if (auto it = std::find_if_not(objects.begin(), objects.end(),
                                         [r=robot](auto a) { return r.get_current_target().type == a.type; }); it != objects.end()) /// primer elemento distinto al tipo del robot
     {
-        robot.set_current_rot_speed(0);
+        robot.set_pure_rotation(0);
         robot.set_current_target(*it);
         state = State::APPROACHING;
     }
     else
-        robot.set_current_rot_speed(0.5);
+        robot.set_pure_rotation(0.5);
 }
 
 
-void SpecificWorker::APPROACHING_state(const RoboCompYoloObjects::TObjects &objects){
+void SpecificWorker::APPROACHING_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line){
 
-    if(robot.get_distance_to_target() < 300){
+    if(robot.get_distance_to_target() < 400){
         state = State::SEARCHING;
     }
         // el find con el igual, si me da true reemplazo el target con el target que me ha dado el iterador.
     else if (auto it = std::find_if(objects.begin(), objects.end(),
                                     [r=robot](auto a) { return r.get_current_target().type == a.type; }); it != objects.end())
     {
-        robot.set_current_advance_speed(300);
         robot.set_current_target(*it);
     }
     else
@@ -309,12 +304,8 @@ void SpecificWorker::APPROACHING_state(const RoboCompYoloObjects::TObjects &obje
 
 }
 
-
-
-
-
-
 void SpecificWorker::WAITING_state(){
+    sleep(3);
     state = State::SEARCHING;
 }
 

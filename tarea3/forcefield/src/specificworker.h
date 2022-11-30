@@ -49,6 +49,7 @@ public:
     bool setParams(RoboCompCommonBehavior::ParameterList params);
 
     void JoystickAdapter_sendData(RoboCompJoystickAdapter::TData data);
+    ::Ice::Int tipo;
 
 public slots:
     void compute();
@@ -127,7 +128,7 @@ private:
     enum class State {IDLE, SEARCHING, APPROACHING, WAITING};
     State state = State::IDLE;
     void SEARCHING_state(const RoboCompYoloObjects::TObjects &objects);
-    void APPROACHING_state(const RoboCompYoloObjects::TObjects &objects);
+    void APPROACHING_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
     void WAITING_state();
 
     float iou(const RoboCompYoloObjects::TBox &a, const RoboCompYoloObjects::TBox &b);
@@ -141,6 +142,7 @@ private:
 
     // Clock
     rc::Timer<> clock;
+
 
 
 };
