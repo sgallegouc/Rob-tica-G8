@@ -1,0 +1,349 @@
+{
+	"BUILD_DIR" : "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen",
+	"CMAKE_BINARY_DIR" : "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/CMakeLists.txt",
+		"/home/alumno/robocomp/cmake/robocomp.cmake",
+		"/home/alumno/robocomp/cmake/modules/qt.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeParseArguments.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"/usr/share/cmake-3.22/Modules/CMakeParseArguments.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Xml/Qt5XmlConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Xml/Qt5XmlConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5XmlPatterns/Qt5XmlPatternsConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5XmlPatterns/Qt5XmlPatternsConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5NetworkConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/CMakeListsSpecific.txt",
+		"/home/alumno/robocomp/cmake/modules/opencv4.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake",
+		"/usr/share/cmake-3.22/Modules/FindIce.cmake",
+		"/usr/share/cmake-3.22/Modules/SelectLibraryConfigurations.cmake",
+		"/usr/share/cmake-3.22/Modules/SelectLibraryConfigurations.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake",
+		"/usr/share/cmake-3.22/Modules/FindThreads.cmake",
+		"/usr/share/cmake-3.22/Modules/CheckLibraryExists.cmake",
+		"/usr/share/cmake-3.22/Modules/CheckIncludeFile.cmake",
+		"/usr/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake",
+		"/usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake",
+		"/usr/share/cmake-3.22/Modules/CheckIncludeFile.c.in",
+		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake",
+		"/usr/share/cmake-3.22/Modules/FindIce.cmake",
+		"/usr/share/cmake-3.22/Modules/SelectLibraryConfigurations.cmake",
+		"/usr/share/cmake-3.22/Modules/SelectLibraryConfigurations.cmake",
+		"/usr/share/cmake-3.22/Modules/SelectLibraryConfigurations.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h",
+			"MU",
+			"I3FNLAJYSS/moc_abstract_graphic_viewer.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/classes/qlog/qlog.h",
+			"MU",
+			"DVFBV33MU7/moc_qlog.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/classes/rapplication/rapplication.h",
+			"MU",
+			"GKJOXEN2T4/moc_rapplication.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/classes/sigwatch/sigwatch.h",
+			"MU",
+			"Z2MVH3G4AO/moc_sigwatch.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/camera.h",
+			"MU",
+			"EWIEGA46WW/moc_camera.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/commonbehaviorI.h",
+			"MU",
+			"EWIEGA46WW/moc_commonbehaviorI.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/dynamic_window.h",
+			"MU",
+			"EWIEGA46WW/moc_dynamic_window.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/genericmonitor.h",
+			"MU",
+			"EWIEGA46WW/moc_genericmonitor.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/genericworker.h",
+			"MU",
+			"EWIEGA46WW/moc_genericworker.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/joystickadapterI.h",
+			"MU",
+			"EWIEGA46WW/moc_joystickadapterI.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/robot.h",
+			"MU",
+			"EWIEGA46WW/moc_robot.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/specificmonitor.h",
+			"MU",
+			"EWIEGA46WW/moc_specificmonitor.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/specificworker.h",
+			"MU",
+			"EWIEGA46WW/moc_specificworker.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"ICE_CPP11_MAPPING",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_OPENGL_LIB",
+		"QT_SQL_LIB",
+		"QT_WIDGETS_LIB",
+		"QT_XMLPATTERNS_LIB",
+		"QT_XML_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src",
+		"/opt/robocomp/include",
+		"/classes",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield",
+		"/home/alumno/robocomp/classes",
+		"/home/alumno/robocomp/libs",
+		"/home/alumno/robocomp/interfaces",
+		"/include",
+		"/usr/include/opencv4",
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt5/QtSql",
+		"/usr/include/x86_64-linux-gnu/qt5/QtOpenGL",
+		"/usr/include/x86_64-linux-gnu/qt5/QtXml",
+		"/usr/include/x86_64-linux-gnu/qt5/QtXmlPatterns",
+		"/usr/include/x86_64-linux-gnu/qt5/QtNetwork",
+		"/usr/include/c++/11",
+		"/usr/include/x86_64-linux-gnu/c++/11",
+		"/usr/include/c++/11/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/11/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : 
+	[
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/CameraRGBDSimple.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/CommonBehavior.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/GenericBase.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/JointMotorSimple.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/JoystickAdapter.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/OmniRobot.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/YoloObjects.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/ui_mainUI.h"
+	],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/CMakeFiles/forcefield_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/CMakeFiles/forcefield_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp",
+			"MU",
+			null
+		],
+		[ "/home/alumno/robocomp/classes/qlog/qlog.cpp", "MU", null ],
+		[
+			"/home/alumno/robocomp/classes/rapplication/rapplication.cpp",
+			"MU",
+			null
+		],
+		[ "/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp", "MU", null ],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/camera.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/commonbehaviorI.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/dynamic_window.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/genericmonitor.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/genericworker.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/joystickadapterI.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/robot.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/specificmonitor.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/specificworker.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : 
+	[
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/CameraRGBDSimple.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/CommonBehavior.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/GenericBase.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/JointMotorSimple.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/JoystickAdapter.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/OmniRobot.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/YoloObjects.cpp",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/mainUI.ui",
+		"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/ui_mainUI.h"
+	],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}
