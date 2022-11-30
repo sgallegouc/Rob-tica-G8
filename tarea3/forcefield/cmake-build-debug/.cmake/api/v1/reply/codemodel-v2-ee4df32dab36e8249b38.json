@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-34c71776ed784388d362.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-Debug-0e45e8f54f9fe6eb1f95.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "forcefield",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "ICES__home_robocomp_robocomp_components_Rob-tica-G8_tarea3_forcefield_src::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ICES__home_robocomp_robocomp_components_Rob-tica-G8_tarea3_forcefield_src-Debug-ac206c2d8e0f7bf72363.json",
+					"name" : "ICES__home_robocomp_robocomp_components_Rob-tica-G8_tarea3_forcefield_src",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "forcefield::@145eef247bfb46b6828c",
+					"jsonFile" : "target-forcefield-Debug-471f7b443ca4d958f1f3.json",
+					"name" : "forcefield",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "forcefield_autogen::@145eef247bfb46b6828c",
+					"jsonFile" : "target-forcefield_autogen-Debug-f2fc246222179730d11b.json",
+					"name" : "forcefield_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "forcefield_autogen_timestamp_deps::@145eef247bfb46b6828c",
+					"jsonFile" : "target-forcefield_autogen_timestamp_deps-Debug-80e4e40ef3a011123757.json",
+					"name" : "forcefield_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/robocomp/robocomp/components/Rob-tica-G8/tarea3/forcefield/cmake-build-debug",
+		"source" : "/home/robocomp/robocomp/components/Rob-tica-G8/tarea3/forcefield"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
