@@ -86,7 +86,6 @@
 		"/usr/share/cmake-3.22/Modules/CheckIncludeFile.cmake",
 		"/usr/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake",
 		"/usr/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake",
-		"/usr/share/cmake-3.22/Modules/CheckIncludeFile.c.in",
 		"/usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake",
 		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake",
 		"/usr/share/cmake-3.22/Modules/FindIce.cmake",
@@ -138,6 +137,12 @@
 			null
 		],
 		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door.h",
+			"MU",
+			"EWIEGA46WW/moc_door.cpp",
+			null
+		],
+		[
 			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/dynamic_window.h",
 			"MU",
 			"EWIEGA46WW/moc_dynamic_window.cpp",
@@ -177,6 +182,12 @@
 			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/specificworker.h",
 			"MU",
 			"EWIEGA46WW/moc_specificworker.cpp",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/states.h",
+			"MU",
+			"EWIEGA46WW/moc_states.cpp",
 			null
 		]
 	],
@@ -290,6 +301,11 @@
 			null
 		],
 		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/dynamic_window.cpp",
 			"MU",
 			null
@@ -326,6 +342,11 @@
 		],
 		[
 			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/specificworker.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/states.cpp",
 			"MU",
 			null
 		]

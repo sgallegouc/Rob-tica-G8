@@ -6,6 +6,8 @@ SET ( SOURCES
   dynamic_window.cpp
   robot.cpp
   camera.cpp
+  states.cpp
+  door.cpp
 )
 
 # Headers set

@@ -12,9 +12,11 @@
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/YoloObjects.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/camera.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/config.h \
+  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/dynamic_window.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/genericworker.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/robot.h \
+  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/states.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/ui_mainUI.h \
   /usr/include/GL/gl.h \
   /usr/include/Ice/AsyncResult.h \
@@ -921,6 +923,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFrame \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsEllipseItem \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPolygonItem \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsView \

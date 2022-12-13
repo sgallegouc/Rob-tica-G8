@@ -38,6 +38,9 @@
 #include <timer/timer.h>
 #include "robot.h"
 #include "camera.h"
+#include "states.h"
+#include "door.h"
+
 
 class SpecificWorker : public GenericWorker
 {
@@ -125,12 +128,7 @@ private:
 
     // state machine
     Eigen::Vector3f state_machine(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
-    enum class State {IDLE, SEARCHING, APPROACHING, WAITING};
-    State state = State::IDLE;
-    void SEARCHING_state(const RoboCompYoloObjects::TObjects &objects);
-    void APPROACHING_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
-    void WAITING_state();
-    void detecting_doors(const std::vector<Eigen::Vector2f> &line);
+
 
 
     float iou(const RoboCompYoloObjects::TBox &a, const RoboCompYoloObjects::TBox &b);

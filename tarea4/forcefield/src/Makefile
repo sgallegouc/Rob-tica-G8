@@ -419,6 +419,30 @@ commonbehaviorI.cpp.s:
 	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/commonbehaviorI.cpp.s
 .PHONY : commonbehaviorI.cpp.s
 
+door.o: door.cpp.o
+.PHONY : door.o
+
+# target to build an object file
+door.cpp.o:
+	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/door.cpp.o
+.PHONY : door.cpp.o
+
+door.i: door.cpp.i
+.PHONY : door.i
+
+# target to preprocess a source file
+door.cpp.i:
+	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/door.cpp.i
+.PHONY : door.cpp.i
+
+door.s: door.cpp.s
+.PHONY : door.s
+
+# target to generate assembly for a file
+door.cpp.s:
+	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/door.cpp.s
+.PHONY : door.cpp.s
+
 dynamic_window.o: dynamic_window.cpp.o
 .PHONY : dynamic_window.o
 
@@ -731,6 +755,30 @@ specificworker.cpp.s:
 	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/specificworker.cpp.s
 .PHONY : specificworker.cpp.s
 
+states.o: states.cpp.o
+.PHONY : states.o
+
+# target to build an object file
+states.cpp.o:
+	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/states.cpp.o
+.PHONY : states.cpp.o
+
+states.i: states.cpp.i
+.PHONY : states.i
+
+# target to preprocess a source file
+states.cpp.i:
+	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/states.cpp.i
+.PHONY : states.cpp.i
+
+states.s: states.cpp.s
+.PHONY : states.s
+
+# target to generate assembly for a file
+states.cpp.s:
+	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/states.cpp.s
+.PHONY : states.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -773,6 +821,9 @@ help:
 	@echo "... commonbehaviorI.o"
 	@echo "... commonbehaviorI.i"
 	@echo "... commonbehaviorI.s"
+	@echo "... door.o"
+	@echo "... door.i"
+	@echo "... door.s"
 	@echo "... dynamic_window.o"
 	@echo "... dynamic_window.i"
 	@echo "... dynamic_window.s"
@@ -812,6 +863,9 @@ help:
 	@echo "... specificworker.o"
 	@echo "... specificworker.i"
 	@echo "... specificworker.s"
+	@echo "... states.o"
+	@echo "... states.i"
+	@echo "... states.s"
 .PHONY : help
 
 

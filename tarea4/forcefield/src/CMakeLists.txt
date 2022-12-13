@@ -25,7 +25,7 @@ SET ( SOURCES
   commonbehaviorI.cpp
   genericworker.cpp
   joystickadapterI.cpp
-)
+        states.cpp states.h)
 
 
 

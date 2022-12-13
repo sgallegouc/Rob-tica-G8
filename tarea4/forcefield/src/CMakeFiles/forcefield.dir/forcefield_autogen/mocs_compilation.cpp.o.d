@@ -1321,4 +1321,7 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsEllipseItem \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../robot.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
- /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../camera.h
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../camera.h \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../states.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../door.h
