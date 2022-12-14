@@ -212,11 +212,11 @@ void SpecificWorker::compute()
 
     /// compute level_lines
     auto omni_lines = get_multi_level_3d_points_omni(omni_depth_frame);
-    //draw_floor_line(omni_lines, {1});
+    draw_floor_line(omni_lines, {1});
     auto current_line = omni_lines[1];  // second line of the list of laser lines at different heights
     //auto top_lines = get_multi_level_3d_points_top(top_depth_frame, top_camera.get_depth_focalx(), top_camera.get_depth_focaly());
-    auto top_lines  = top_camera.get_depth_lines_in_robot(0, 1600, 50, robot.get_tf_cam_to_base());
-    draw_floor_line(top_lines, {1});
+    //auto top_lines  = top_camera.get_depth_lines_in_robot(0, 1600, 50, robot.get_tf_cam_to_base());
+    //draw_floor_line(top_lines, {1});
 
     /// YOLO
     RoboCompYoloObjects::TObjects objects = yolo_detect_objects(top_rgb_frame);
@@ -253,20 +253,21 @@ void SpecificWorker::compute()
     /// viene inicializado .type = -1.
 
     /// eye tracking: tracks  current selected object or  IOR if none
-    eye_track(robot);
-    draw_top_camera_optic_ray();
+   // eye_track(robot);
+    //draw_top_camera_optic_ray();
 
     // DWA algorithm
     auto [adv, rot, side] =  dwa.update(robot.get_robot_target_coordinates(), current_line, robot.get_current_advance_speed(), robot.get_current_rot_speed(), viewer);
 
-    qInfo() << __FUNCTION__ << adv <<  side << rot;
+    //qInfo() << __FUNCTION__ << adv <<  side << rot;
     try{ omnirobot_proxy->setSpeedBase(side, adv, rot); }
     catch(const Ice::Exception &e){ std::cout << e.what() << "Error connecting to omnirobot" << std::endl;}
 
-    //robot.print();
+    robot.print();
 }
 
-void SpecificWorker::SEARCHING_state(const RoboCompYoloObjects::TObjects &objects){
+void SpecificWorker::SEARCHING_state(const RoboCompYoloObjects::TObjects &objects)
+{
 
     if(objects.empty()) return;
     if(robot.get_current_target().type == -1)
@@ -288,7 +289,8 @@ void SpecificWorker::SEARCHING_state(const RoboCompYoloObjects::TObjects &object
 }
 
 
-void SpecificWorker::APPROACHING_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line){
+void SpecificWorker::APPROACHING_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line)
+{
 
     if(robot.get_distance_to_target() < 400){
         state = State::SEARCHING;
@@ -304,9 +306,16 @@ void SpecificWorker::APPROACHING_state(const RoboCompYoloObjects::TObjects &obje
 
 }
 
-void SpecificWorker::WAITING_state(){
+void SpecificWorker::WAITING_state()
+{
     sleep(3);
     state = State::SEARCHING;
+}
+
+void SpecificWorker::detectar_puertas(const std::vector<Eigen::Vector2f> &line)
+{
+    std::vector<Eigen::Vector2f> derivadas;
+
 }
 
 

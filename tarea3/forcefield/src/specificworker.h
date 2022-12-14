@@ -130,6 +130,8 @@ private:
     void SEARCHING_state(const RoboCompYoloObjects::TObjects &objects);
     void APPROACHING_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
     void WAITING_state();
+    void detectar_puertas(const std::vector<Eigen::Vector2f> &line);
+
 
     float iou(const RoboCompYoloObjects::TBox &a, const RoboCompYoloObjects::TBox &b);
     float closest_distance_ahead(const vector<Eigen::Vector2f> &line);
