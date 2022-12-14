@@ -14,10 +14,10 @@ class Door {
 
     public:
 
-        Eigen::Vector2f p0, p1, center;
-
-
+        Eigen::Vector2f point1, point2, center;
         std::vector<Door>detector(const std::vector<Eigen::Vector2f> &line);
+        void draw_doors(const std::vector<Door> &doors_v, AbstractGraphicViewer *viewer);
+        void draw_peaks(std::vector<std::tuple<int, bool>> pecks, const std::vector<Eigen::Vector2f> &line, AbstractGraphicViewer *viewer);
 };
 
 

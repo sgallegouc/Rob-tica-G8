@@ -234,7 +234,7 @@ void SpecificWorker::compute()
 
 
 
-    auto doors = Door.detector(current_line);
+    //auto doors = Door.detector(current_line);
     //
 
     /// metodo buscar: girar hasta que la lista de objetos de yolo devuelva un current_state distinto al que

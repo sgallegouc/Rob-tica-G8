@@ -67,5 +67,3 @@
         state = State::SEARCHING;
     }
 
-
-}

@@ -40,9 +40,48 @@ std::vector<Door>detector(const std::vector<Eigen::Vector2f> &points)
 
             if(((pos1 and !pos2) or (pos2 and !pos1)) and ((v1 - v2).norm() < 1200 and (v1 - v2).norm() > 600))
             {
-                Door door{.p0=v1, .p1=v2, .center=(v1 + v2)/2};
+                Door door{.point1=v1, .point2=v2, .center=(v1 + v2)/2};
                 doors.push_back(door);
             }
         }
         return doors;
     }
+
+void Door::draw_doors(const std::vector<Door> &doors_v, AbstractGraphicViewer *viewer)
+{
+    static std::vector<QGraphicsItem *> items;
+    for(const auto &item: items)
+        viewer->scene.removeItem(item);
+    items.clear();
+
+    for(auto &&[k, doors]: doors_v | iter::enumerate)
+    {
+        QColor color("red");
+        QBrush brush(color);
+        QPen pen(color);
+        for(const auto &p: doors_v)
+        {
+            auto item = viewer->scene.addEllipse(-100, -100, 200, 200, pen, brush);
+            item->setPos(p.center.x(), p.center.y());
+            items.push_back(item);
+        }
+    }
+}
+void Door::draw_peaks(std::vector<std::tuple<int, bool>> pecks, const std::vector<Eigen::Vector2f> &line,
+                               AbstractGraphicViewer *viewer)
+{
+    static std::vector<QGraphicsItem *> items;
+    for(const auto &item: items)
+        viewer->scene.removeItem(item);
+    items.clear();
+    QColor color("blue");
+    QBrush brush(color);
+    QPen pen(color);
+
+    for(auto &[p, b]: pecks)
+    {
+        auto item = viewer->scene.addEllipse(-100, -100, 200, 200, pen, brush);
+        item->setPos(line[p].x(), line[p].y());
+        items.push_back(item);
+    }
+}

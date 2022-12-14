@@ -27,13 +27,10 @@ class States {
     public:
        enum class State {IDLE, SEARCHING, APPROACHING, WAITING};
        State state = State::IDLE;
-       void STATE_machine(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
-       void SEARCHING_state(const RoboCompYoloObjects::TObjects &objects);
-       void APPROACHING_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
+       void STATE_machine(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line, const rc::Robot robot);
+       void SEARCHING_state(const RoboCompYoloObjects::TObjects &objects, rc::Robot robot);
+       void APPROACHING_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line, rc::Robot robot);
        void WAITING_state();
-       void detecting_doors(const std::vector<Eigen::Vector2f> &line);
-
-
 
 };
 
