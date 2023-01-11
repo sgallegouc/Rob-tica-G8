@@ -127,7 +127,13 @@ private:
     Eigen::Vector3f target_coordinates{0.f, 0.f, 0.f};  //third component for pure  rotations
 
     // state machine
-    Eigen::Vector3f state_machine(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
+    States state_machine;
+
+    // Door Detector
+    Door_detector door_detector;
+
+    //Generic Object List
+    std::vector<rc::GenericObject> genericObjects;
 
 
 

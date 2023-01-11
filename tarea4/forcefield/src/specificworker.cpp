@@ -237,6 +237,9 @@ void SpecificWorker::compute()
     //auto doors = Door.detector(current_line);
     //
 
+    state_machine.STATE_machine(genericObjects, current_line, robot);
+    robot.goto_target(current_line, viewer);
+
     /// metodo buscar: girar hasta que la lista de objetos de yolo devuelva un current_state distinto al que
     /// viene inicializado .type = -1.
 
