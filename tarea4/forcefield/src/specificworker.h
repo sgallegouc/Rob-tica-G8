@@ -40,7 +40,8 @@
 #include "camera.h"
 #include "states.h"
 #include "door.h"
-
+#include "door_detector.h"
+#include "objects.h"
 
 class SpecificWorker : public GenericWorker
 {
@@ -130,10 +131,11 @@ private:
     States state_machine;
 
     // Door Detector
-    Door_detector door_detector;
+    DoorDetector door_detector;
 
     //Generic Object List
-    std::vector<rc::GenericObject> genericObjects;
+    std::vector<rc::Objects> Objects;
+
 
 
 

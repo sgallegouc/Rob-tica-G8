@@ -46,7 +46,7 @@ namespace rc
     {
         camera_pan_angle = std::clamp(pan, min_pan_angle, max_pan_angle);
     }
-    void Robot::set_current_target(const RoboCompYoloObjects::TBox &target)
+    void Robot::set_current_target(const Objects &target)
     {
         current_target = target;
         has_target_flag = true;
@@ -60,6 +60,20 @@ namespace rc
     bool Robot::has_target() const
     {
         return has_target_flag;
+    }
+
+    void Robot::goto_target(const std::vector<Eigen::Vector2f> &current_line, AbstractGraphicViewer *viewer){
+
+        float adv=0, rot=0, side=0;
+        if(pure_rotation){
+            rot=pure_rotation;
+        } else{
+            if(has_target_flag){
+                auto [x, y, z] =  dwa.update(this->get_robot_target_coordinates(), current_line, this->get_current_advance_speed(), this->get_current_rot_speed(), viewer);
+            }
+        }
+        try{ omnirobot_proxy->setSpeedBase(side, adv, rot); }
+        catch(const Ice::Exception &e){ std::cout << e.what() << "Error connecting to omnirobot" << std::endl;}
     }
 
     float Robot::get_current_advance_speed() const
@@ -78,7 +92,7 @@ namespace rc
     {
         return camera_pan_angle;
     }
-    RoboCompYoloObjects::TBox Robot::get_current_target() const
+    Objects Robot::get_current_target() const
     {
         return current_target;
     }

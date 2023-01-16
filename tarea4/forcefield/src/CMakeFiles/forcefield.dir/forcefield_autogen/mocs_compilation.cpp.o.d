@@ -1322,6 +1322,9 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o: \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../robot.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../camera.h \
- /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../states.h \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../objects.h \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../door_detector.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../dynamic_window.h \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../states.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../door.h

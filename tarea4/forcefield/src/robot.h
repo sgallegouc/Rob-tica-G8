@@ -13,6 +13,8 @@
 #include "camera.h"
 #include <JointMotorSimple.h>
 #include <OmniRobot.h>
+#include "objects.h"
+#include "dynamic_window.h"
 
 namespace rc
 {
@@ -35,7 +37,8 @@ namespace rc
                 float get_current_rot_speed() const;
                 float get_target_angle_in_frame() const;
                 float get_current_pan_angle() const;
-                RoboCompYoloObjects::TBox get_current_target() const;
+                void goto_target(const std::vector<Eigen::Vector2f> &current_line, AbstractGraphicViewer *viewer);
+                Objects get_current_target() const;
                 float get_distance_to_target();
                 Eigen::Transform<float, 3, Eigen::Affine> get_tf_cam_to_base();
                 float get_pure_rotation() const;
@@ -48,7 +51,7 @@ namespace rc
                 void set_current_advance_speed(float adv);
                 void set_current_rot_speed(float rot);
                 void set_current_pan_angle(float pan);
-                void set_current_target(const RoboCompYoloObjects::TBox &target);
+                void set_current_target(const Objects &target);
                 void set_has_target(bool val);
                 bool has_target() const;
                 void set_desired_distance_to_target(float dist); //mm
@@ -67,6 +70,7 @@ namespace rc
                 float min_pan_angle = -M_PI_2; // rad
 
             private:
+                Dynamic_Window dwa;
                 float current_adv_speed = 0;
                 float current_rot_speed = 0;
                 float camera_pan_angle = 0.f;
@@ -77,7 +81,7 @@ namespace rc
                 RoboCompOmniRobot::OmniRobotPrxPtr omnirobot_proxy;
                 float pure_rotation = 0.f;
                 float pure_advance = 0.f;
-                RoboCompYoloObjects::TBox current_target{.type = -1};
+                Objects current_target;
                 bool has_target_flag = false;
                 std::map<float, float> bumper;
                 Eigen::ArrayXf sector1, sector2, sector3,  sector4, sector5;

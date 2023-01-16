@@ -901,6 +901,18 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o: \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/JointMotorSimple.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/OmniRobot.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/GenericBase.h \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/objects.h \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door_detector.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/dynamic_window.h \
+ /usr/include/c++/11/optional \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QPolygonF \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QTransform \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsEllipseItem \
+ /home/alumno/robocomp/classes/timer/timer.h \
  /usr/local/include/cppitertools/range.hpp \
  /usr/local/include/cppitertools/internal/iterbase.hpp \
- /usr/include/c++/11/optional /usr/include/c++/11/ranges
+ /usr/include/c++/11/ranges

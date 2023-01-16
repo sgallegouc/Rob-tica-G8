@@ -13,8 +13,10 @@
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/camera.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/config.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door.h \
+  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door_detector.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/dynamic_window.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/genericworker.h \
+  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/objects.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/robot.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/states.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/ui_mainUI.h \

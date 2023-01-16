@@ -237,7 +237,7 @@ void SpecificWorker::compute()
     //auto doors = Door.detector(current_line);
     //
 
-    state_machine.STATE_machine(genericObjects, current_line, robot);
+    state_machine.STATE_machine(Objects, current_line, robot);
     robot.goto_target(current_line, viewer);
 
     /// metodo buscar: girar hasta que la lista de objetos de yolo devuelva un current_state distinto al que
@@ -248,13 +248,13 @@ void SpecificWorker::compute()
     //draw_top_camera_optic_ray();
 
     // DWA algorithm
-    auto [adv, rot, side] =  dwa.update(robot.get_robot_target_coordinates(), current_line, robot.get_current_advance_speed(), robot.get_current_rot_speed(), viewer);
+    //auto [adv, rot, side] =  dwa.update(robot.get_robot_target_coordinates(), current_line, robot.get_current_advance_speed(), robot.get_current_rot_speed(), viewer);
 
     //qInfo() << __FUNCTION__ << adv <<  side << rot;
    // try{ omnirobot_proxy->setSpeedBase(side, adv, rot); }
     //catch(const Ice::Exception &e){ std::cout << e.what() << "Error connecting to omnirobot" << std::endl;}
 
-    robot.print();
+    //robot.print();
 }
 
 

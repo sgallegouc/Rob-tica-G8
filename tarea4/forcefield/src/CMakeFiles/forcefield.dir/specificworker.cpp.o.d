@@ -1286,8 +1286,11 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o: \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/robot.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/camera.h \
- /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/states.h \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/objects.h \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door_detector.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/dynamic_window.h \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/states.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door.h \
  /usr/local/include/cppitertools/range.hpp \
  /usr/local/include/cppitertools/internal/iterbase.hpp \
