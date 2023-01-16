@@ -419,29 +419,29 @@ commonbehaviorI.cpp.s:
 	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/commonbehaviorI.cpp.s
 .PHONY : commonbehaviorI.cpp.s
 
-door.o: door.cpp.o
-.PHONY : door.o
+door_detector.o: door_detector.cpp.o
+.PHONY : door_detector.o
 
 # target to build an object file
-door.cpp.o:
-	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/door.cpp.o
-.PHONY : door.cpp.o
+door_detector.cpp.o:
+	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/door_detector.cpp.o
+.PHONY : door_detector.cpp.o
 
-door.i: door.cpp.i
-.PHONY : door.i
+door_detector.i: door_detector.cpp.i
+.PHONY : door_detector.i
 
 # target to preprocess a source file
-door.cpp.i:
-	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/door.cpp.i
-.PHONY : door.cpp.i
+door_detector.cpp.i:
+	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/door_detector.cpp.i
+.PHONY : door_detector.cpp.i
 
-door.s: door.cpp.s
-.PHONY : door.s
+door_detector.s: door_detector.cpp.s
+.PHONY : door_detector.s
 
 # target to generate assembly for a file
-door.cpp.s:
-	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/door.cpp.s
-.PHONY : door.cpp.s
+door_detector.cpp.s:
+	cd /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/door_detector.cpp.s
+.PHONY : door_detector.cpp.s
 
 dynamic_window.o: dynamic_window.cpp.o
 .PHONY : dynamic_window.o
@@ -821,9 +821,9 @@ help:
 	@echo "... commonbehaviorI.o"
 	@echo "... commonbehaviorI.i"
 	@echo "... commonbehaviorI.s"
-	@echo "... door.o"
-	@echo "... door.i"
-	@echo "... door.s"
+	@echo "... door_detector.o"
+	@echo "... door_detector.i"
+	@echo "... door_detector.s"
 	@echo "... dynamic_window.o"
 	@echo "... dynamic_window.i"
 	@echo "... dynamic_window.s"

@@ -17,7 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/YoloObjects.cpp" "src/CMakeFiles/forcefield.dir/YoloObjects.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/YoloObjects.cpp.o.d"
   "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/camera.cpp" "src/CMakeFiles/forcefield.dir/camera.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/camera.cpp.o.d"
   "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/commonbehaviorI.cpp" "src/CMakeFiles/forcefield.dir/commonbehaviorI.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/commonbehaviorI.cpp.o.d"
-  "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door.cpp" "src/CMakeFiles/forcefield.dir/door.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/door.cpp.o.d"
+  "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door_detector.cpp" "src/CMakeFiles/forcefield.dir/door_detector.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/door_detector.cpp.o.d"
   "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/dynamic_window.cpp" "src/CMakeFiles/forcefield.dir/dynamic_window.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/dynamic_window.cpp.o.d"
   "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/mocs_compilation.cpp" "src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o.d"
   "/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/genericmonitor.cpp" "src/CMakeFiles/forcefield.dir/genericmonitor.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/genericmonitor.cpp.o.d"

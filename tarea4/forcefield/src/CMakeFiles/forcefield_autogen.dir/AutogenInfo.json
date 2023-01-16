@@ -137,9 +137,9 @@
 			null
 		],
 		[
-			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door.h",
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door_detector.h",
 			"MU",
-			"EWIEGA46WW/moc_door.cpp",
+			"EWIEGA46WW/moc_door_detector.cpp",
 			null
 		],
 		[
@@ -301,7 +301,7 @@
 			null
 		],
 		[
-			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door.cpp",
+			"/home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door_detector.cpp",
 			"MU",
 			null
 		],
