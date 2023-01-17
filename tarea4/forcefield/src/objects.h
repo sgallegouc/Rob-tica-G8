@@ -1,8 +1,8 @@
 //
 // Created by alumno on 16/01/23.
 //
-#ifndef FORCEFIELD_GENERICOBJECT_H
-#define FORCEFIELD_GENERICOBJECT_H
+#ifndef FORCEFIELD_OBJECTS_H
+#define FORCEFIELD_OBJECTS_H
 
 #include <YoloObjects.h>
 #include <Eigen/Dense>
@@ -41,4 +41,4 @@ namespace rc
 
 } // rc
 
-#endif //FORCEFIELD_GENERICOBJECT_H
+#endif

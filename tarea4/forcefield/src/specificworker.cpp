@@ -228,16 +228,16 @@ void SpecificWorker::compute()
     /// draw yolo_objects on 2D view
     draw_objects_on_2dview(objects, RoboCompYoloObjects::TBox());
 
-    auto door = door_detector.detect(current_line, viewer);
-    //door_detector.draw_doors(door, viewer);
+    auto door = door_detector.detect(omni_lines, viewer);
+    door_detector.draw_doors(door, viewer);
 
-    //draw_objects_on_2dview(yolo_Objects, RoboCompYoloObjects::TBox());
+    draw_objects_on_2dview(objects, RoboCompYoloObjects::TBox());
 
-    auto yolo_Object = rc::Objects::add_yolo(yolo_Objects);
-    objects.insert(objects.end(), yolo_Objects.begin(), yolo_Objects.end());
+    auto yolo_Object = rc::Objects::add_yolo(objects);
+    Objects.insert(Objects.end(), yolo_Object.begin(), yolo_Object.end());
 
     auto door_Object = rc::Objects::add_doors(door);
-    objects.insert(objectsVector.end(), door_Object.begin(), door_Object.end());
+    Objects.insert(Objects.end(), door_Object.begin(), door_Object.end());
 
     state_machine.STATE_machine(Objects, current_line, robot, viewer);
     robot.goto_target(current_line, viewer);

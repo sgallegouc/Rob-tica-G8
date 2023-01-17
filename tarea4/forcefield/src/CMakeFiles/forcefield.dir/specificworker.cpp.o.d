@@ -19,7 +19,7 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/alumno/robocomp/classes/qlog/qlog.h \
+ /opt/robocomp/classes/qlog/qlog.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
@@ -1034,7 +1034,7 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o: \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/JoystickAdapter.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/OmniRobot.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/YoloObjects.h \
- /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsscene.h \
@@ -1058,7 +1058,7 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPolygonItem \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h \
- /home/alumno/robocomp/classes/timer/timer.h /usr/include/Eigen/Dense \
+ /opt/robocomp/classes/timer/timer.h /usr/include/Eigen/Dense \
  /usr/include/Eigen/Core \
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/Eigen/src/Core/util/Macros.h \
@@ -1289,9 +1289,9 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o: \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/objects.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door_detector.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/dynamic_window.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/states.h \
- /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door.h \
  /usr/local/include/cppitertools/range.hpp \
  /usr/local/include/cppitertools/internal/iterbase.hpp \
  /usr/local/include/cppitertools/enumerate.hpp \

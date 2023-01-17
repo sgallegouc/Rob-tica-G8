@@ -1,8 +1,5 @@
 /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificworker.cpp: /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/specificworker.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/moc_predefs.h \
-  /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
-  /home/alumno/robocomp/classes/qlog/qlog.h \
-  /home/alumno/robocomp/classes/timer/timer.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/CameraRGBDSimple.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/CommonBehavior.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/GenericBase.h \
@@ -20,6 +17,9 @@
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/robot.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/states.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/ui_mainUI.h \
+  /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+  /opt/robocomp/classes/qlog/qlog.h \
+  /opt/robocomp/classes/timer/timer.h \
   /usr/include/GL/gl.h \
   /usr/include/Ice/AsyncResult.h \
   /usr/include/Ice/BatchRequestQueueF.h \

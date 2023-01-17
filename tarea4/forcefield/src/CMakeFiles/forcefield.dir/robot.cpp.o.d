@@ -801,7 +801,7 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgba64.h \
- /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -1062,7 +1062,7 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QTransform \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsEllipseItem \
- /home/alumno/robocomp/classes/timer/timer.h \
+ /opt/robocomp/classes/timer/timer.h \
  /usr/local/include/cppitertools/range.hpp \
  /usr/local/include/cppitertools/internal/iterbase.hpp \
  /usr/include/c++/11/ranges

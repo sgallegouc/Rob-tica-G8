@@ -942,7 +942,7 @@ src/CMakeFiles/forcefield.dir/states.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h \
- /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
@@ -978,7 +978,7 @@ src/CMakeFiles/forcefield.dir/states.cpp.o: \
  /usr/include/c++/11/iostream \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/genericworker.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/config.h \
- /home/alumno/robocomp/classes/qlog/qlog.h \
+ /opt/robocomp/classes/qlog/qlog.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/boost/format.hpp /usr/include/boost/detail/workaround.hpp \
@@ -1244,7 +1244,7 @@ src/CMakeFiles/forcefield.dir/states.cpp.o: \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/JoystickAdapter.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/OmniRobot.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/YoloObjects.h \
- /home/alumno/robocomp/classes/timer/timer.h \
+ /opt/robocomp/classes/timer/timer.h \
  /usr/include/opencv4/opencv2/core.hpp \
  /usr/include/opencv4/opencv2/core/cvdef.h \
  /usr/include/opencv4/opencv2/core/version.hpp \

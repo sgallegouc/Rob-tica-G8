@@ -1,8 +1,89 @@
 /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/genericworker.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/forcefield_autogen/moc_predefs.h \
-  /home/alumno/robocomp/classes/qlog/qlog.h \
+  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/CameraRGBDSimple.h \
+  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/CommonBehavior.h \
+  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/GenericBase.h \
+  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/JointMotorSimple.h \
+  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/JoystickAdapter.h \
+  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/OmniRobot.h \
+  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/YoloObjects.h \
   /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/config.h \
+  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/ui_mainUI.h \
+  /opt/robocomp/classes/qlog/qlog.h \
   /usr/include/GL/gl.h \
+  /usr/include/Ice/AsyncResult.h \
+  /usr/include/Ice/BatchRequestQueueF.h \
+  /usr/include/Ice/Buffer.h \
+  /usr/include/Ice/BuiltinSequences.h \
+  /usr/include/Ice/CommunicatorF.h \
+  /usr/include/Ice/Comparable.h \
+  /usr/include/Ice/Config.h \
+  /usr/include/Ice/ConnectionF.h \
+  /usr/include/Ice/ConnectionIF.h \
+  /usr/include/Ice/Current.h \
+  /usr/include/Ice/DefaultValueFactory.h \
+  /usr/include/Ice/EndpointF.h \
+  /usr/include/Ice/EndpointTypes.h \
+  /usr/include/Ice/Exception.h \
+  /usr/include/Ice/ExceptionHelpers.h \
+  /usr/include/Ice/FactoryTable.h \
+  /usr/include/Ice/FactoryTableInit.h \
+  /usr/include/Ice/Format.h \
+  /usr/include/Ice/GCObject.h \
+  /usr/include/Ice/Handle.h \
+  /usr/include/Ice/Identity.h \
+  /usr/include/Ice/Incoming.h \
+  /usr/include/Ice/IncomingAsyncF.h \
+  /usr/include/Ice/InputStream.h \
+  /usr/include/Ice/InstanceF.h \
+  /usr/include/Ice/Instrumentation.h \
+  /usr/include/Ice/LocalException.h \
+  /usr/include/Ice/LocalObject.h \
+  /usr/include/Ice/LoggerF.h \
+  /usr/include/Ice/Object.h \
+  /usr/include/Ice/ObjectAdapterF.h \
+  /usr/include/Ice/ObjectF.h \
+  /usr/include/Ice/ObserverHelper.h \
+  /usr/include/Ice/Optional.h \
+  /usr/include/Ice/OutgoingAsync.h \
+  /usr/include/Ice/OutgoingAsyncF.h \
+  /usr/include/Ice/OutputStream.h \
+  /usr/include/Ice/Protocol.h \
+  /usr/include/Ice/Proxy.h \
+  /usr/include/Ice/ProxyF.h \
+  /usr/include/Ice/ProxyFactoryF.h \
+  /usr/include/Ice/ProxyHandle.h \
+  /usr/include/Ice/ReferenceF.h \
+  /usr/include/Ice/RequestHandlerF.h \
+  /usr/include/Ice/ResponseHandlerF.h \
+  /usr/include/Ice/ServantLocatorF.h \
+  /usr/include/Ice/ServantManagerF.h \
+  /usr/include/Ice/SlicedDataF.h \
+  /usr/include/Ice/StreamHelpers.h \
+  /usr/include/Ice/UniquePtr.h \
+  /usr/include/Ice/UserExceptionFactory.h \
+  /usr/include/Ice/Value.h \
+  /usr/include/Ice/ValueF.h \
+  /usr/include/Ice/ValueFactory.h \
+  /usr/include/Ice/Version.h \
+  /usr/include/IceUtil/Atomic.h \
+  /usr/include/IceUtil/Cond.h \
+  /usr/include/IceUtil/Config.h \
+  /usr/include/IceUtil/Exception.h \
+  /usr/include/IceUtil/Handle.h \
+  /usr/include/IceUtil/Lock.h \
+  /usr/include/IceUtil/Monitor.h \
+  /usr/include/IceUtil/Mutex.h \
+  /usr/include/IceUtil/MutexProtocol.h \
+  /usr/include/IceUtil/PopDisableWarnings.h \
+  /usr/include/IceUtil/PushDisableWarnings.h \
+  /usr/include/IceUtil/ScopedArray.h \
+  /usr/include/IceUtil/Shared.h \
+  /usr/include/IceUtil/Thread.h \
+  /usr/include/IceUtil/ThreadException.h \
+  /usr/include/IceUtil/Time.h \
+  /usr/include/IceUtil/Timer.h \
+  /usr/include/IceUtil/UndefSysMacros.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
@@ -31,6 +112,7 @@
   /usr/include/c++/11/bits/cpp_type_traits.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/deque.tcc \
   /usr/include/c++/11/bits/erase_if.h \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_defines.h \
@@ -70,6 +152,7 @@
   /usr/include/c++/11/bits/shared_ptr_atomic.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/specfun.h \
+  /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/bits/std_mutex.h \
@@ -77,6 +160,7 @@
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/bits/stl_deque.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/stl_iterator.h \
@@ -85,10 +169,12 @@
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/stl_multiset.h \
   /usr/include/c++/11/bits/stl_numeric.h \
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/bits/stl_set.h \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_uninitialized.h \
@@ -103,6 +189,7 @@
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/cassert \
   /usr/include/c++/11/cctype \
   /usr/include/c++/11/cerrno \
   /usr/include/c++/11/climits \
@@ -112,11 +199,14 @@
   /usr/include/c++/11/concepts \
   /usr/include/c++/11/cstddef \
   /usr/include/c++/11/cstdint \
+  /usr/include/c++/11/cstdio \
   /usr/include/c++/11/cstdlib \
+  /usr/include/c++/11/cstring \
   /usr/include/c++/11/cwchar \
   /usr/include/c++/11/cwctype \
   /usr/include/c++/11/debug/assertions.h \
   /usr/include/c++/11/debug/debug.h \
+  /usr/include/c++/11/deque \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/ext/alloc_traits.h \
@@ -148,6 +238,8 @@
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
   /usr/include/c++/11/random \
+  /usr/include/c++/11/set \
+  /usr/include/c++/11/sstream \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/stdlib.h \
   /usr/include/c++/11/streambuf \
@@ -172,6 +264,7 @@
   /usr/include/c++/11/utility \
   /usr/include/c++/11/vector \
   /usr/include/ctype.h \
+  /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
@@ -193,6 +286,7 @@
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
   /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
@@ -211,7 +305,9 @@
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
@@ -235,6 +331,7 @@
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
@@ -246,6 +343,7 @@
   /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
@@ -273,6 +371,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QSizeF \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractanimation.h \
@@ -585,8 +684,27 @@
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFrame \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSplitter \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsplitter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \

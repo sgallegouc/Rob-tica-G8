@@ -26,8 +26,10 @@ public:
         int idx0, idx1;
         const float height = 1000.f;
     };
-    std::vector<Door> detect(const std::vector<Eigen::Vector2f> &lines, AbstractGraphicViewer *viewer=nullptr);
+    std::vector<Door> detect(const std::vector<std::vector<Eigen::Vector2f>> &lines, AbstractGraphicViewer *viewer=nullptr);
     std::vector<Eigen::Vector2f> filter_out_points_beyond_doors(const std::vector<Eigen::Vector2f> &floor_line_cart, const std::vector<DoorDetector::Door> &doors);
+    void draw_peaks(const std::vector<std::tuple<int, bool>> &peaks, const std::vector<Eigen::Vector2f> &line, AbstractGraphicViewer *viewer=nullptr);
+    void draw_doors(const std::vector<Door> &doors, AbstractGraphicViewer *viewer=nullptr);
 
 private:
     const float der_threshold = 800.f;
@@ -35,9 +37,7 @@ private:
     const float max_door_width = 1100;
     const float min_door_width = 700; // mm
     const float max_door_separation = 100; //mm
-    void draw_peaks(const std::vector<std::tuple<int, bool>> &peaks, const std::vector<Eigen::Vector2f> &line, AbstractGraphicViewer *viewer=nullptr);
-    void draw_doors(const std::vector<Door> &doors, AbstractGraphicViewer *viewer=nullptr);
-};
 
+};
 
 #endif //FORCEFIELD_DOOR_DETECTOR_H

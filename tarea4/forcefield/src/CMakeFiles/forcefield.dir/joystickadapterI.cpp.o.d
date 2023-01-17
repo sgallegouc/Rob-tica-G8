@@ -317,7 +317,7 @@ src/CMakeFiles/forcefield.dir/joystickadapterI.cpp.o: \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/config.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/genericworker.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/config.h \
- /home/alumno/robocomp/classes/qlog/qlog.h \
+ /opt/robocomp/classes/qlog/qlog.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \

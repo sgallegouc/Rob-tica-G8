@@ -1030,12 +1030,12 @@ src/CMakeFiles/forcefield.dir/main.cpp.o: \
  /usr/include/langinfo.h /usr/include/nl_types.h /usr/include/Ice/UUID.h \
  /usr/include/IceUtil/UUID.h /usr/include/IceStorm/IceStorm.h \
  /usr/include/IceStorm/Metrics.h /usr/include/IceStorm/Config.h \
- /home/alumno/robocomp/classes/rapplication/rapplication.h \
+ /opt/robocomp/classes/rapplication/rapplication.h \
  /usr/include/IceUtil/IceUtil.h /usr/include/IceUtil/Functional.h \
  /usr/include/IceUtil/MutexPtrLock.h /usr/include/IceUtil/RecMutex.h \
- /home/alumno/robocomp/classes/sigwatch/sigwatch.h \
+ /opt/robocomp/classes/sigwatch/sigwatch.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
- /home/alumno/robocomp/classes/qlog/qlog.h \
+ /opt/robocomp/classes/qlog/qlog.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/config.h \
  /usr/include/boost/format.hpp /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp /usr/include/boost/config.hpp \
@@ -1260,7 +1260,7 @@ src/CMakeFiles/forcefield.dir/main.cpp.o: \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/YoloObjects.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/specificworker.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/genericworker.h \
- /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsView \
@@ -1275,7 +1275,7 @@ src/CMakeFiles/forcefield.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPolygonItem \
- /home/alumno/robocomp/classes/timer/timer.h /usr/include/Eigen/Dense \
+ /opt/robocomp/classes/timer/timer.h /usr/include/Eigen/Dense \
  /usr/include/Eigen/Core \
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/Eigen/src/Core/util/Macros.h \
