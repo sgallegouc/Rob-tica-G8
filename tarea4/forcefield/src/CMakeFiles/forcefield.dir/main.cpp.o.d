@@ -1506,9 +1506,9 @@ src/CMakeFiles/forcefield.dir/main.cpp.o: \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/objects.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door_detector.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
+ /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/dynamic_window.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/states.h \
- /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/door.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/specificmonitor.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/commonbehaviorI.h \
  /home/alumno/robocomp/components/Rob-tica-G8/tarea4/forcefield/src/joystickadapterI.h

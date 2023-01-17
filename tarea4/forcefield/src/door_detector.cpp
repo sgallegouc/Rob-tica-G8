@@ -8,7 +8,7 @@
 #include <cppitertools/combinations.hpp>
 #include <cppitertools/enumerate.hpp>
 
-std::vector<DoorDetector::Door> DoorDetector::detect(const std::vector<std::vector<Eigen::Vector2f>> &lines, AbstractGraphicViewer *viewer)
+std::vector<DoorDetector::Door> DoorDetector::detect(const std::vector<Eigen::Vector2f> &lines, AbstractGraphicViewer *viewer)
 {
     // lambda to check that all points between door edges are further that the edges themselves
     auto distances_between_points_greater_than_distances_to_points = [](auto &p0, auto &p1, auto &line)

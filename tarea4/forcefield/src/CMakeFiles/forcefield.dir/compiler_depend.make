@@ -5788,6 +5788,158 @@ src/CMakeFiles/forcefield.dir/door_detector.cpp.o: src/door_detector.cpp \
   /usr/include/opencv4/opencv2/core/optim.hpp \
   /usr/include/opencv4/opencv2/core/ovx.hpp \
   /usr/include/opencv4/opencv2/core/cvdef.h \
+  src/door.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QtGuiDepends \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qabstracttextdocumentlayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextlayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qglyphrun.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrawfont.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontdatabase.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocument.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessible.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessiblebridge.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfactoryinterface.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessibleobject.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessible.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessibleplugin.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbackingstore.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QEvent \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMargins \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QRect \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurface.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurfaceformat.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbitmap.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qclipboard.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolorspace.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolortransform.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolortransform.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qdesktopservices.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qdrag.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontdatabase.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericplugin.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericpluginfactory.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qglyphrun.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qiconengine.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qiconengineplugin.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimageiohandler.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimagereader.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimageiohandler.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimagewriter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmovie.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimagereader.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qoffscreensurface.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengl.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglbuffer.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QScopedPointer \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengldebug.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglextrafunctions.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglframebufferobject.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglpaintdevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglpixeltransferoptions.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSharedDataPointer \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglshaderprogram.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengltexture.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengltextureblitter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QMatrix3x3 \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QMatrix4x4 \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengltimerquery.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglvertexarrayobject.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglwindow.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintDeviceWindow \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevicewindow.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QWindow \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintDevice \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLContext \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagedpaintdevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagelayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagesize.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagelayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagesize.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpdfwriter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagedpaintdevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpicture.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpictureformatplugin.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixelformat.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmapcache.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrasterwindow.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrawfont.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgba64.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qscreen.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSize \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSizeF \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QTransform \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qsessionmanager.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qstandarditemmodel.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qstatictext.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qstylehints.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurface.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qsyntaxhighlighter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextobject.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocument.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocumentfragment.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocumentwriter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextlayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextlist.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextobject.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtexttable.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h \
   /usr/local/include/cppitertools/range.hpp \
   /usr/local/include/cppitertools/internal/iterbase.hpp \
   /usr/include/c++/11/optional \
@@ -8195,9 +8347,9 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o: src/for
   src/objects.h \
   src/door_detector.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
+  src/door.h \
   src/dynamic_window.h \
-  src/states.h \
-  src/door.h
+  src/states.h
 
 src/CMakeFiles/forcefield.dir/genericmonitor.cpp.o: src/genericmonitor.cpp \
   /usr/include/stdc-predef.h \
@@ -15861,9 +16013,9 @@ src/CMakeFiles/forcefield.dir/main.cpp.o: src/main.cpp \
   src/objects.h \
   src/door_detector.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
+  src/door.h \
   src/dynamic_window.h \
   src/states.h \
-  src/door.h \
   src/specificmonitor.h \
   src/commonbehaviorI.h \
   src/joystickadapterI.h
@@ -16890,13 +17042,163 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o: src/robot.cpp \
   src/objects.h \
   src/door_detector.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
+  src/door.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QtGuiDepends \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qabstracttextdocumentlayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextlayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qglyphrun.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrawfont.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontdatabase.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocument.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessible.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessiblebridge.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfactoryinterface.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessibleobject.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessible.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qaccessibleplugin.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbackingstore.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QEvent \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMargins \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QRect \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurface.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurfaceformat.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbitmap.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qclipboard.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolorspace.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolortransform.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolortransform.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qdesktopservices.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qdrag.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontdatabase.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericplugin.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericpluginfactory.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qglyphrun.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qiconengine.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qiconengineplugin.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimageiohandler.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimagereader.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimageiohandler.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimagewriter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qgenericmatrix.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmovie.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimagereader.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qoffscreensurface.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengl.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglbuffer.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QScopedPointer \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengldebug.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglcontext.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglextrafunctions.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglframebufferobject.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglpaintdevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglpixeltransferoptions.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSharedDataPointer \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglshaderprogram.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix4x4.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengltexture.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengltextureblitter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QMatrix3x3 \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QMatrix4x4 \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopengltimerquery.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglversionfunctions.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglvertexarrayobject.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qopenglwindow.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintDeviceWindow \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevicewindow.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QWindow \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindow.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPaintDevice \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QOpenGLContext \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagedpaintdevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagelayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagesize.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagelayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagesize.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintengine.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpdfwriter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpagedpaintdevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpicture.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpictureformatplugin.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixelformat.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmapcache.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qquaternion.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrasterwindow.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrawfont.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgba64.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qscreen.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSize \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSizeF \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QTransform \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qsessionmanager.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qstandarditemmodel.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qstatictext.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qstylehints.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qsurface.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qsyntaxhighlighter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextobject.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocument.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocumentfragment.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextdocumentwriter.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextlayout.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextlist.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextobject.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtexttable.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector3d.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h \
   src/dynamic_window.h \
   /usr/include/c++/11/optional \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QPolygonF \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpolygon.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QTransform \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsEllipseItem \
   /home/alumno/robocomp/classes/timer/timer.h \
   /usr/local/include/cppitertools/range.hpp \
@@ -20950,9 +21252,9 @@ src/CMakeFiles/forcefield.dir/states.cpp.o: src/states.cpp \
   src/camera.h \
   src/objects.h \
   src/door_detector.h \
+  src/door.h \
   src/dynamic_window.h \
-  src/specificworker.h \
-  src/door.h
+  src/specificworker.h
 
 
 /usr/local/include/cppitertools/chunked.hpp:
@@ -21147,8 +21449,6 @@ src/forcefield_autogen/include/moc_sigwatch.cpp:
 
 /home/alumno/robocomp/classes/qlog/qlog.cpp:
 
-src/door.h:
-
 src/robot.h:
 
 /usr/include/opencv4/opencv2/highgui.hpp:
@@ -21178,6 +21478,8 @@ src/dynamic_window.h:
 /usr/local/include/cppitertools/internal/iteratoriterator.hpp:
 
 /usr/local/include/cppitertools/sliding_window.hpp:
+
+src/door.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h:
 

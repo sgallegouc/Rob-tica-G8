@@ -16,7 +16,7 @@ namespace rc {
     }
 
     Objects(const Door_Detector::Door &d) {
-        type = 90;  // door
+        type = 80;  // door
         rx = d.p_center.x();
         ry = d.p_center.y();
         rz = 0.f;

@@ -34,7 +34,7 @@ namespace rc
         Eigen::Vector3f get_robot_coordinates() const;
         Eigen::Vector3f get_local_coordinates() const;
         void print() const;
-        static std::vector<Objects> add_doors(const std::vector<DoorDetector::Door>     &doors);
+        static std::vector<Objects> add_doors(const std::vector<DoorDetector::Door> &doors);
         static std::vector<Objects> add_yolo(const std::vector<RoboCompYoloObjects::TBox> &boxes);
 
     };

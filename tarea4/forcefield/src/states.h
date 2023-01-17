@@ -26,12 +26,12 @@
 class States {
 
     public:
-       enum class State {IDLE, SEARCHING, APPROACHING, WAITING};
+       enum class State {IDLE, SEARCHING, APPROACHING, CROSS};
        State state = State::IDLE;
-       void STATE_machine(const std::vector<rc::Objects> &objects, const std::vector<Eigen::Vector2f> &line, const rc::Robot robot);
+       void STATE_machine(const std::vector<rc::Objects> &objects, const std::vector<Eigen::Vector2f> &line, const rc::Robot robot, AbstractGraphicViewer *viewer);
        void SEARCHING_state(const std::vector<rc::Objects> &objects, rc::Robot robot);
        void APPROACHING_state(const std::vector<rc::Objects> &objects, const std::vector<Eigen::Vector2f> &line, rc::Robot robot);
-       void WAITING_state();
+       void CROSS_state(rc::Robot robot, AbstractGraphicViewer *viewer);
 
 };
 

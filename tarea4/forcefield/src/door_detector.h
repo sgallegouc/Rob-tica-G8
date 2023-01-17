@@ -13,6 +13,7 @@
 #include <QtCore>
 #include <abstract_graphic_viewer/abstract_graphic_viewer.h>
 #include <opencv2/core.hpp>
+#include "door.h"
 
 class DoorDetector
 {
@@ -25,7 +26,7 @@ public:
         int idx0, idx1;
         const float height = 1000.f;
     };
-    std::vector<Door> detect(const std::vector<std::vector<Eigen::Vector2f>> &lines, AbstractGraphicViewer *viewer=nullptr);
+    std::vector<Door> detect(const std::vector<Eigen::Vector2f> &lines, AbstractGraphicViewer *viewer=nullptr);
     std::vector<Eigen::Vector2f> filter_out_points_beyond_doors(const std::vector<Eigen::Vector2f> &floor_line_cart, const std::vector<DoorDetector::Door> &doors);
 
 private:

@@ -228,16 +228,18 @@ void SpecificWorker::compute()
     /// draw yolo_objects on 2D view
     draw_objects_on_2dview(objects, RoboCompYoloObjects::TBox());
 
-    //  TODO:: STATE MACHINE
-    //  state machine to activate basic behaviours. Returns a  target_coordinates vector
-    //state_machine(objects, current_line);
+    auto door = door_detector.detect(current_line, viewer);
+    //door_detector.draw_doors(door, viewer);
 
+    //draw_objects_on_2dview(yolo_Objects, RoboCompYoloObjects::TBox());
 
+    auto yolo_Object = rc::Objects::add_yolo(yolo_Objects);
+    objects.insert(objects.end(), yolo_Objects.begin(), yolo_Objects.end());
 
-    //auto doors = Door.detector(current_line);
-    //
+    auto door_Object = rc::Objects::add_doors(door);
+    objects.insert(objectsVector.end(), door_Object.begin(), door_Object.end());
 
-    state_machine.STATE_machine(Objects, current_line, robot);
+    state_machine.STATE_machine(Objects, current_line, robot, viewer);
     robot.goto_target(current_line, viewer);
 
     /// metodo buscar: girar hasta que la lista de objetos de yolo devuelva un current_state distinto al que
@@ -246,15 +248,6 @@ void SpecificWorker::compute()
     /// eye tracking: tracks  current selected object or  IOR if none
    // eye_track(robot);
     //draw_top_camera_optic_ray();
-
-    // DWA algorithm
-    //auto [adv, rot, side] =  dwa.update(robot.get_robot_target_coordinates(), current_line, robot.get_current_advance_speed(), robot.get_current_rot_speed(), viewer);
-
-    //qInfo() << __FUNCTION__ << adv <<  side << rot;
-   // try{ omnirobot_proxy->setSpeedBase(side, adv, rot); }
-    //catch(const Ice::Exception &e){ std::cout << e.what() << "Error connecting to omnirobot" << std::endl;}
-
-    //robot.print();
 }
 
 
